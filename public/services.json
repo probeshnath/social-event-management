@@ -1,0 +1,76 @@
+[
+    {
+      "name": "Wedding",
+      "id": 1,
+      "price": 5000,
+      "description": "A wedding is a momentous occasion that marks the beginning of a lifelong journey together for two individuals deeply in love. It's a day filled with love, laughter, and cherished memories as family and friends gather to witness the union of souls. From the breathtaking vows exchanged under a canopy of flowers to the enchanting melodies that fill the air, a wedding is a celebration of commitment, hope, and the promise of forever.",
+      "img": [
+        "https://i.ibb.co/M6KBrxq/VISH6619.jpg",
+        "https://i.ibb.co/GtLGrf9/best-gifts-for-a-baby-shower-334919-400x.jpg",
+        "https://i.ibb.co/bNym16Z/baby-shower-decor-ideas-aglamlifestyle-scaled.jpg",
+        "https://i.ibb.co/cD298HD/100375804.png"
+      ]
+    },
+    {
+      "name": "Birthday Party",
+      "id": 2,
+      "price": 800,
+      "description": "A birthday party is a time-honored tradition that celebrates the uniqueness of an individual's life. It's a day when the spotlight shines brightly on the guest of honor, and friends and family come together to make them feel truly special. From the colorful decorations to the delicious cake, every element is carefully chosen to reflect the personality and interests of the birthday person. It's a day of joy, surprises, and heartfelt wishes as we commemorate another year of life's journey.",
+      "img": [
+        "https://i.ibb.co/M6KBrxq/VISH6619.jpg",
+        "https://i.ibb.co/GtLGrf9/best-gifts-for-a-baby-shower-334919-400x.jpg",
+        "https://i.ibb.co/bNym16Z/baby-shower-decor-ideas-aglamlifestyle-scaled.jpg",
+        "https://i.ibb.co/cD298HD/100375804.png"
+      ]
+    },
+    {
+      "name": "Anniversary",
+      "id": 3,
+      "price": 1200,
+      "description": "An anniversary is a beautiful milestone that celebrates the enduring love and commitment between two people. It's a time to reflect on the journey of a shared life, filled with shared experiences, challenges, and triumphs. With each passing year, the bond deepens, and the anniversary serves as a reminder of the love that continues to grow. Whether it's a first anniversary or a golden one, it's a moment to renew vows, exchange tokens of affection, and cherish the enduring partnership.",
+      "img": [
+        "https://i.ibb.co/M6KBrxq/VISH6619.jpg",
+        "https://i.ibb.co/GtLGrf9/best-gifts-for-a-baby-shower-334919-400x.jpg",
+        "https://i.ibb.co/bNym16Z/baby-shower-decor-ideas-aglamlifestyle-scaled.jpg",
+        "https://i.ibb.co/cD298HD/100375804.png"
+      ]
+    },
+    {
+      "name": "Engagement Party",
+      "id": 4,
+      "price": 600,
+      "description": "An engagement party is a joyful prelude to the celebration of love and commitment. It's the moment when a couple announces their intention to embark on a lifelong journey together, and it's filled with excitement and anticipation. Family and friends gather to offer their blessings and share in the happiness of the couple. It's a time for toasts, smiles, and the exchange of well-wishes as the engaged couple sets off on the path to wedded bliss.",
+      "img": [
+        "https://i.ibb.co/s3PC0YJ/DSC07601.jpg",
+        "https://i.ibb.co/w6mM1Ms/ac48e90f-29de-49a7-b189-766815db130e-rs-768.jpg",
+        "https://i.ibb.co/3fYHsyz/what-to-wear-to-an-engagement-party.jpg",
+        "https://i.ibb.co/ygfrkjW/Engagement-Party-Planning-0331-1-Rooftop-Proposal.jpg"
+      ]
+    },
+    {
+      "name": "Retirement Party",
+      "id": 5,
+      "price": 700,
+      "description": "A retirement party is a well-deserved farewell to a dedicated individual's professional journey. It's a time to celebrate the achievements, hard work, and dedication that have marked their career. Colleagues and friends gather to express gratitude and bid adieu to the retiree as they step into a new phase of life filled with leisure, relaxation, and new adventures. It's a moment to reflect on a successful career and look forward to the joys of retirement.",
+      "img": [
+        "https://i.ibb.co/Nr0XYMb/E420-T910-new-retirement-party-decorations-black.jpg",
+        "https://i.ibb.co/FqM4CQD/RETIREMENT-PARTY-IDEAS-HEADER.jpg",
+        "https://i.ibb.co/2yMF7NS/decoration-ideas-for-a-retirement-celebration-party-jpg.webp",
+        "https://i.ibb.co/RYgRWxs/Picture13.png"
+      ]
+    },
+    {
+      "name": "Baby Shower",
+      "id": 6,
+      "price": 400,
+      "description": "A baby shower is a heartwarming celebration that welcomes a new life into the world and showers expectant parents with love and support. It's a time for family and friends to gather, offering gifts and well-wishes to prepare the parents for the journey of parenthood. The event is filled with laughter, games, and the anticipation of the baby's arrival. It's a day of excitement and joy as we look forward to the newest member of the family.",
+      "img": [
+        "https://i.ibb.co/M6KBrxq/VISH6619.jpg",
+        "https://i.ibb.co/GtLGrf9/best-gifts-for-a-baby-shower-334919-400x.jpg",
+        "https://i.ibb.co/bNym16Z/baby-shower-decor-ideas-aglamlifestyle-scaled.jpg",
+        "https://i.ibb.co/cD298HD/100375804.png"
+      ]
+    }
+  ]
+  
+  
