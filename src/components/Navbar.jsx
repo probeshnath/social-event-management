@@ -2,13 +2,13 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const links = <>
-        <li><NavLink to="/messages" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Home</NavLink></li>
-        <li><NavLink to="/messages" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Contact</NavLink></li>
-        <li><NavLink to="/messages" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Blogs</NavLink></li>
-        <li><NavLink to="/messages" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Services</NavLink></li>
+        <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Home</NavLink></li>
+        <li><NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Contact</NavLink></li>
+        <li><NavLink to="/blogs" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Blogs</NavLink></li>
+        <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Services</NavLink></li>
     </>
     return (
-        <div className="max-w-6xl mx-auto ">
+        <div className="max-w-6xl mx-auto pt-2 pb-5 ">
             <div className="flex justify-between items-center ">
                 {/* logo */}
                 <div>
