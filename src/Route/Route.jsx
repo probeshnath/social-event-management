@@ -5,6 +5,7 @@ import Contact from '../pages/Contact'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import Blogs from "../pages/Blogs";
+import ServiceDetails from "../pages/ServiceDetails";
 
 const router =createBrowserRouter( [
     {
@@ -13,7 +14,8 @@ const router =createBrowserRouter( [
         children:[
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
+                loader: ()=> fetch("/services.json")
             },
             {
                 path: "/contact",
@@ -30,6 +32,11 @@ const router =createBrowserRouter( [
             {
                 path: "/blogs",
                 element: <Blogs />
+            },
+            {
+                path: "/services/:id",
+                element: <ServiceDetails />,
+                loader: ()=> fetch("/services.json")
             },
         ]
     }
