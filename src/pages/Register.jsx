@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import SocialLogin from '../components/SocialLogin'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../Context/AuthProvider'
+import { updateProfile } from 'firebase/auth'
 
 const Register = () => {
 
@@ -21,6 +22,10 @@ const Register = () => {
 
     register(email,password)
     .then((result)=>{
+      updateProfile(result.user,{
+        displayName:name,
+        photoURL: photo || "https://cdn.iconscout.com/icon/free/png-256/free-laptop-user-1-1179329.png?f=webp"
+      })
       console.log(result.user)
     })
     .catch((error) =>{
