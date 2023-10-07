@@ -6,16 +6,18 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 import Blogs from "../pages/Blogs";
 import ServiceDetails from "../pages/ServiceDetails";
+import ErrorPage from "../pages/ErrorPage";
 
 const router =createBrowserRouter( [
     {
         path:"/",
-        element: <MainRoute></MainRoute>,
+        element: <MainRoute></MainRoute>,        
+        errorElement :<ErrorPage />,
         children:[
             {
                 path: "/",
                 element: <Home />,
-                loader: ()=> fetch("/services.json")
+                loader: ()=> fetch("/services.json"),
             },
             {
                 path: "/contact",

@@ -1,4 +1,4 @@
-import FooterLogo from '../../public/footer.png'
+import FooterLogo from '/footer.png'
 import {FaFacebook, FaGithub, FaGoogle, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube} from 'react-icons/fa'
 
 
