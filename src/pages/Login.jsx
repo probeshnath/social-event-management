@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import { AuthContext } from '../Context/AuthProvider'
 
 const Login = () => {
-  const {login} = useContext(AuthContext)
+  const {login,user} = useContext(AuthContext)
 
+console.log(user)
 
   const handleLogin = (e) =>{
     e.preventDefault();
