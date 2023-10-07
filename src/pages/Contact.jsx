@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className='grid grid-cols-3 gap-3'>
       <div className='bg-slate-300 col-span-2 text-center py-10 flex-1 '>
-        <h2 className='pb-5 font-bold text-3xl'>Login</h2>
+        <h2 className='pb-5 font-bold text-3xl'>Contact With Us</h2>
         <form className='flex flex-col w-2/3 mx-auto gap-3'>
           <input className='py-3 outline-none rounded-md px-3 bg-slate-100' type="email" placeholder='Enter your Email' name="email" id="" />
           <input className='py-3 outline-none rounded-md px-3 bg-slate-100' type="password" placeholder='Enter your Password' name="password" id="" />
