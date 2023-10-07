@@ -24,7 +24,7 @@ const Navbar = () => {
 
                 {/* user icon */}
                 <div className="relative">
-                    <button className="btn">Login</button>
+                   <Link to="/login"> <button className="btn">Login</button></Link>
                     {/* <img className="w-8" src="/pngegg.png" alt="user" /> */}
                     <ul className="flex absolute bg-slate-400 py-4 px-3 right-3 md:hidden flex-col gap-6 ">
                         {links}
