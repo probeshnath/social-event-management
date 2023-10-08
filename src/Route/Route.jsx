@@ -7,6 +7,7 @@ import Register from '../pages/Register'
 import Blogs from "../pages/Blogs";
 import ServiceDetails from "../pages/ServiceDetails";
 import ErrorPage from "../pages/ErrorPage";
+import BlogDetails from "../pages/BlogDetails";
 
 const router =createBrowserRouter( [
     {
@@ -33,12 +34,18 @@ const router =createBrowserRouter( [
             },
             {
                 path: "/blogs",
-                element: <Blogs />
+                element: <Blogs />,
+                // loader: ()=> fetch("/blogs.json")
             },
             {
                 path: "/services/:id",
                 element: <ServiceDetails />,
                 loader: ()=> fetch("/services.json")
+            },
+            {
+                path: "/blog/:id",
+                element: <BlogDetails />,
+                loader: ()=> fetch("/blogs.json")
             },
         ]
     }
