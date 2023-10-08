@@ -33,13 +33,13 @@ const AuthProvider = ({children}) => {
 
   // create user with email and password
   const register = (email, password) =>{
-    setLoading(true)
+    // setLoading(true)
     return createUserWithEmailAndPassword(auth, email,password)
   }
 
   // Login with email, password
   const login = (email,password) =>{
-    setLoading(true)
+    // setLoading(true)
     return signInWithEmailAndPassword(auth,email,password);
   }
 
