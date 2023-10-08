@@ -2,6 +2,10 @@ import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 import {RxCross2} from 'react-icons/rx'
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+import {FiLogOut} from 'react-icons/fi'
+import {BiGift} from 'react-icons/bi'
+import {PiSignInBold} from 'react-icons/pi'
 
 const Navbar = () => {
     const [open, setOpen]=useState(false)
@@ -55,7 +59,7 @@ const Navbar = () => {
                             </div>
                         ) : (
 
-                            <Link to="/login"> <button className="border-2 py-1 px-5 border-green-800 rounded-xl bg-green-100 text-green-700 hover:bg-black hover:text-white transition">Login</button></Link>
+                            <Link to="/login"> <button className="border-2 py-1 px-5 border-green-800 rounded-xl bg-green-100 text-green-700 hover:bg-black flex items-center gap-2 hover:text-white transition"> <PiSignInBold  /> Login </button> </Link>
                         )
                     }
                     {
@@ -67,9 +71,10 @@ const Navbar = () => {
                                 <button className="bg-orange-400 text-white mt-2 rounded-md py-1 px-4"> My Profile</button>
                             </div>
                             <hr />
-                        <ul className="flex flex-col gap-3">
-                        <li onClick={handleLogout} className="pb-1 -mt-3 bg-slate-800 py-1 hover:text-orange-600 mb-2"><Link to="">Logout</Link> </li>
-                        <li className="pb-1 -mt-3 bg-slate-800 py-1 hover:text-orange-600"><Link to="">Cart</Link> </li>
+                        <ul className="flex flex-col gap-1">
+                        <li onClick={handleLogout} className="-mt-3 bg-slate-800 py-1 hover:text-orange-600 "><Link className="flex justify-center items-center gap-2" to=""><FiLogOut /> Logout</Link> </li>
+                        <li className=" bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to=""><AiOutlineShoppingCart /> Cart</Link> </li>
+                        <li className="  bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to=""><BiGift /> Ordered</Link> </li>
 
                         </ul>
                     </div>

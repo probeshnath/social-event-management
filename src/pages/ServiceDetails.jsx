@@ -34,11 +34,11 @@ const ServiceDetails = () => {
           <p className='text-gray-400 text-justify pb-4'>{service?.description}</p>
           <div className='flex items-center justify-between'>
             <p className='flex items-center gap-2 '>Price: <span className='flex items-center' > <FiDollarSign /> {service?.price} </span></p>
-            <div >
-              {/* <MdOutlineFavoriteBorder /> */}
-              <MdFavorite className='text-red-600 text-lg' />
+            <div className='flex gap-3 items-center' >
+              <button className='flex items-center gap-2 border-2 py-1 rounded-md hover:bg-orange-400 hover:text-black px-4'><MdOutlineFavoriteBorder className='text-xl' /> Favorite</button>
+              {/* <MdFavorite className='text-red-600 text-lg' /> */}
+            <button className='flex items-center gap-2 bg-orange-400 py-1 hover:bg-transparent hover:border-2 px-3 rounded-md'><BiCreditCard /> Purchase</button>
             </div>
-            <button className='flex items-center gap-2 bg-orange-400 py-1 px-3 rounded-md'><BiCreditCard /> Purchase</button>
           </div>
         </div>
       </div>
