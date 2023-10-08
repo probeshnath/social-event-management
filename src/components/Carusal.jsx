@@ -2,176 +2,61 @@ import React from 'react'
 
 const Carusal = () => {
     return (
-        
-           
-
-            <div id="default-carousel" className="relative w-full" data-carousel="slide">
-
-                <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-
-                    <div className=" duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.ibb.co/cD298HD/100375804.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                    </div>
-
-                    <div className=" duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.ibb.co/GtLGrf9/best-gifts-for-a-baby-shower-334919-400x.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                    </div>
-
-                    <div className=" duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.ibb.co/cD298HD/100375804.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                    </div>
-
-                    <div className=" duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.ibb.co/GtLGrf9/best-gifts-for-a-baby-shower-334919-400x.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-                    </div>
-
-                    <div className=" duration-700 ease-in-out" data-carousel-item>
-                        <img src="https://i.ibb.co/cD298HD/100375804.png" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        <div className='relative'>
+            <div className="carousel w-full h-[450px]">
+                <div id="item1" className="carousel-item relative w-full">
+                    <img src="https://cdn0.weddingwire.in/article/9179/3_2/1280/jpg/79719-wedding-events-gautam-khullar-lead-image.jpeg" className="w-full" />
+                    <div className='absolute w-full h-full flex justify-between p-20 bg-black bg-opacity-70 text-white'>
+                        <div className='w-1/2'>
+                            <h1 className='text-5xl' data-aos="fade-left"> A Journey of Love, Commitment, and Togetherness</h1>
+                            <p className='pt-4' data-aos="fade-up">Marriage is a lifelong partnership where two individuals come together to share their lives, dreams, and responsibilities, fostering love, support, and companionship through the highs and lows of life.</p>
+                        </div>
+                        
                     </div>
                 </div>
-
-                <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                <div id="item2" className="carousel-item relative w-full">
+                    <img src="https://i.ibb.co/868WVRM/what-is-a-diaper-raffle-game.jpg" className="w-full" />
+                    <div className='absolute w-full h-full text-center p-20 bg-black bg-opacity-70 text-white'>
+                        <div className='w-2/3 mx-auto'>
+                            <h1 className='text-5xl' data-aos="fade-right"> Welcoming a New Life with Love and Laughter</h1>
+                            <p className='pt-4' data-aos="fade-left">Join us in celebrating the upcoming arrival of our precious bundle of joy! A heartwarming gathering filled with love, laughter, gifts, and well-wishes as we embark on this new adventure together.</p>
+                        </div>
+                        
+                    </div>
                 </div>
-
-                <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
-                        </svg>
-                        <span className="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg className="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
-                        </svg>
-                        <span className="sr-only">Next</span>
-                    </span>
-            
-                </button>
+                <div id="item3" className="carousel-item relative w-full">
+                    <img src="https://i.ibb.co/s3PC0YJ/DSC07601.jpg" className="w-full" />
+                    <div className='absolute w-full h-full p-20 bg-black bg-opacity-70 text-white'>
+                        <div className='w-1/2'>
+                            <h1 className='text-5xl'> A Sparkling Celebration of Love, Commitment, and Forever.</h1>
+                            <p className='pt-4'>Join us as we celebrate the beginning of a beautiful journey. Our hearts have found their home, and we invite you to witness our love and commitment during this joyous engagement.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="item4" className="carousel-item relative w-full">
+                    <img src="https://i.ibb.co/BBgyNwf/pretty-woman-in-party-hat-carrying-cake-with-fire-candles-celebrating-picture-id1168237251-k-20-m-11.jpg" className="w-full" />
+                    <div className='absolute w-full h-full flex  p-20 bg-black bg-opacity-70 text-white'>
+                        <div className='w-1/2'>
+                            {/* <h1 className='text-5xl'>  A Joyous Birthday Bash to Remember Forever</h1>
+                            <p className='pt-4'>Gather with friends and family for a lively birthday celebration filled with laughter, delicious treats, music, and unforgettable moments as we honor another year of life's beautiful journey.</p> */}
+                        </div>
+                        <div className='w-1/2 text-right'>
+                            <h1 className='text-5xl'>  A Joyous Birthday Bash to Remember Forever</h1>
+                            <p className='pt-4'>Gather with friends and family for a lively birthday celebration filled with laughter, delicious treats, music, and unforgettable moments as we honor another year of life's beautiful journey.</p>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
-
-        
+            <div className="flex absolute bottom-[15px] justify-center w-full py-2 gap-2">
+                <a href="#item1" className=" bg-red-500 w-[10px] h-[10px] rounded-full "></a>
+                <a href="#item2" className=" bg-purple-500 w-[10px] h-[10px] rounded-full "></a>
+                <a href="#item3" className=" bg-blue-500 w-[10px] h-[10px] rounded-full "></a>
+                <a href="#item4" className=" bg-green-500 w-[10px] h-[10px] rounded-full "></a>
+            </div>
+        </div>
     )
 }
 
 export default Carusal
-
-
-
- {/* <Carousel classNameName="rounded-xl">
-                <div classNameName="relative h-full w-full">
-                    <img
-                        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-                        alt="image 1"
-                        classNameName="h-full w-full object-cover"
-                    />
-                    <div classNameName="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-                        <div classNameName="w-3/4 text-center md:w-2/4">
-                            <Typography
-                                variant="h1"
-                                color="white"
-                                classNameName="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                            >
-                                The Beauty of Nature
-                            </Typography>
-                            <Typography
-                                variant="lead"
-                                color="white"
-                                classNameName="mb-12 opacity-80"
-                            >
-                                It is not so much for its beauty that the forest makes a claim
-                                upon men&apos;s hearts, as for that subtle something, that quality
-                                of air that emanation from old trees, that so wonderfully changes
-                                and renews a weary spirit.
-                            </Typography>
-                            <div classNameName="flex justify-center gap-2">
-                                <Button size="lg" color="white">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div classNameName="relative h-full w-full">
-                    <img
-                        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-                        alt="image 2"
-                        classNameName="h-full w-full object-cover"
-                    />
-                    <div classNameName="absolute inset-0 grid h-full w-full items-center bg-black/75">
-                        <div classNameName="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32">
-                            <Typography
-                                variant="h1"
-                                color="white"
-                                classNameName="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                            >
-                                The Beauty of Nature
-                            </Typography>
-                            <Typography
-                                variant="lead"
-                                color="white"
-                                classNameName="mb-12 opacity-80"
-                            >
-                                It is not so much for its beauty that the forest makes a claim
-                                upon men&apos;s hearts, as for that subtle something, that quality
-                                of air that emanation from old trees, that so wonderfully changes
-                                and renews a weary spirit.
-                            </Typography>
-                            <div classNameName="flex gap-2">
-                                <Button size="lg" color="white">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div classNameName="relative h-full w-full">
-                    <img
-                        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-                        alt="image 3"
-                        classNameName="h-full w-full object-cover"
-                    />
-                    <div classNameName="absolute inset-0 grid h-full w-full items-end bg-black/75">
-                        <div classNameName="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
-                            <Typography
-                                variant="h1"
-                                color="white"
-                                classNameName="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                            >
-                                The Beauty of Nature
-                            </Typography>
-                            <Typography
-                                variant="lead"
-                                color="white"
-                                classNameName="mb-12 opacity-80"
-                            >
-                                It is not so much for its beauty that the forest makes a claim
-                                upon men&apos;s hearts, as for that subtle something, that quality
-                                of air that emanation from old trees, that so wonderfully changes
-                                and renews a weary spirit.
-                            </Typography>
-                            <div classNameName="flex gap-2">
-                                <Button size="lg" color="white">
-                                    Explore
-                                </Button>
-                                <Button size="lg" color="white" variant="text">
-                                    Gallery
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Carousel> */}

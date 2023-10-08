@@ -21,10 +21,11 @@ const Navbar = () => {
         <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Home</NavLink></li>
         <li><NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Contact</NavLink></li>
         <li><NavLink to="/blogs" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Blogs</NavLink></li>
-        <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Services</NavLink></li>
+        {/* <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Services</NavLink></li> */}
     </>
     return (
-        <div className="max-w-6xl mx-auto pt-2 pb-5 ">
+        <div className="bg-white py-2 shadow-md">
+        <div className="max-w-6xl mx-auto  ">
             <div className="flex justify-between items-center ">
                 {/* logo */}
                 <div>
@@ -33,7 +34,7 @@ const Navbar = () => {
 
                 {/* li */}
                 <div>
-                    <ul className=" hidden md:flex gap-6 ">
+                    <ul className=" hidden font-semibold md:flex gap-6 ">
                         {links}
                     </ul>
                 </div>
@@ -43,12 +44,12 @@ const Navbar = () => {
                     {
                         user ? (
                             <div className="flex">
-                                <button onClick={handleLogout} >Logout</button>
+                                {/* <button onClick={handleLogout} >Logout</button> */}
                                 <img className="ml-2 w-8" src="/pngegg.png" alt="user" /> 
                             </div>
                         ) : (
 
-                            <Link to="/login"> <button className="btn">Login</button></Link>
+                            <Link to="/login"> <button className="border-2 py-1 px-5 border-green-800 rounded-xl bg-green-100 text-green-700 hover:bg-black hover:text-white transition">Login</button></Link>
                         )
                     }
 
@@ -57,6 +58,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

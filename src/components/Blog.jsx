@@ -6,13 +6,11 @@ const Blog = ({ data }) => {
     return (
         <Link to={`/blog/${data.id}`}>
             <div className="card  bg-base-100 shadow-xl image-full">
-                <figure><img src={data.img} alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">{data.name}</h2>
+                <figure><img src={data.img} className='h-[300px] w-full' alt={data.name} /></figure>
+                <div className="card-body flex justify-center items-center">
+                    <h2 className="card-title text-2xl font-bold pb-2">{data.name}</h2>
                     <p>{data.description.slice(0,100)}</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
+                   
                 </div>
             </div>
         </Link>
