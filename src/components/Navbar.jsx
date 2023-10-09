@@ -1,14 +1,16 @@
 import { useContext, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthProvider";
 import {RxCross2} from 'react-icons/rx'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {FiLogOut} from 'react-icons/fi'
 import {BiGift} from 'react-icons/bi'
 import {PiSignInBold} from 'react-icons/pi'
+import {  toast } from 'react-toastify';
 
 const Navbar = () => {
     const [open, setOpen]=useState(false)
+    const navigate = useNavigate();
 
     const {user,logout} = useContext(AuthContext)
 
@@ -16,10 +18,13 @@ const Navbar = () => {
         e.preventDefault()
         logout()
         .then((result)=>{
-            console.log(result.user)
+             toast.success("User Logout successfully");
+             setOpen(false)
+             return navigate("/login")
+
         })
         .catch((error)=>{
-            console.log(error)
+            return toast.error(error.message);
         })
     }
 
@@ -66,8 +71,8 @@ const Navbar = () => {
                         open &&  <div className="flex w-[200px]  text-center rounded-md z-10 absolute bg-black bg-opacity-50 text-gray-400 py-4 px-3 right-3  flex-col gap-6 ">
                             <div onClick={showOPtion} className="right-3 top-3 cursor-pointer text-lg absolute"><RxCross2 className="text-white"/></div>
                             <div>
-                                <img className="w-[50px] h-[50px] rounded-full mx-auto " src={user.photoURL} alt={user.displayName} />
-                                <h2 className="mt-2 text-lg text-white capitalize">{user.displayName}</h2>
+                                <img className="w-[50px] h-[50px] rounded-full mx-auto " src={user?.photoURL} alt={user?.displayName} />
+                                <h2 className="mt-2 text-lg text-white capitalize">{user?.displayName}</h2>
                                 <button className="bg-orange-400 text-white mt-2 rounded-md py-1 px-4"> My Profile</button>
                             </div>
                             <hr />
