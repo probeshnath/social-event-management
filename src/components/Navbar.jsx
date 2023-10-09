@@ -90,6 +90,9 @@ const Navbar = () => {
                         <li onClick={handleLogout} className="-mt-3 bg-slate-800 py-1 hover:text-orange-600 "><Link className="flex justify-center items-center gap-2" to=""><FiLogOut /> Logout</Link> </li>
                         <li className=" bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to=""><AiOutlineShoppingCart /> Cart</Link> </li>
                         <li className="  bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to=""><BiGift /> Ordered</Link> </li>
+                        <li className="  bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to="/home"><BiGift /> Home</Link> </li>
+                        <li className="  bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to="/contact"><BiGift /> Contact</Link> </li>
+                        <li className="  bg-slate-800 py-1 hover:text-orange-600"><Link className="flex justify-center items-center gap-2" to="/blogs"><BiGift /> Blogs</Link> </li>
 
                         </ul>
                     </div>

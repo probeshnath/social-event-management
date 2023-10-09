@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Blog from '../components/Blog'
+import Footer from '../components/Footer'
 // import { useLoaderData } from 'react-router-dom'
 
 
@@ -29,6 +30,8 @@ const Blogs = () => {
       <button className='bg-orange-700 text-white font-bold p-1 rounded-md px-3'onClick={()=>{setSeeAll(datas.length)}} >See All Blogs</button>
     </div>
     }
+
+    <Footer />
     </div>
   )
 }
