@@ -36,6 +36,7 @@ const ServiceDetails = () => {
       if(!exists){
         storedItems.push(id);
           localStorage.setItem('cart', JSON.stringify(storedItems))
+          toast.success("Add To Cart")
       }
   }
   

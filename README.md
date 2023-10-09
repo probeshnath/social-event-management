@@ -6,8 +6,8 @@
 
 ## Live Link of Social Event Management
 
- - [Live Link](https://stackoverflow.com/questions/76677710/how-can-i-solve-the-error-internal-postcss-failed-to-load-when-running-npm-run-d)
- - [Social Event Management](https://stackoverflow.com/questions/76677710/how-can-i-solve-the-error-internal-postcss-failed-to-load-when-running-npm-run-d)
+ - [Live Link](https://social-event-management-1a2d5.web.app/)
+ - [Social Event Management](https://social-event-management-1a2d5.web.app/)
  
 
 ## 5 feature of my website
