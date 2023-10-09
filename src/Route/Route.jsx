@@ -9,6 +9,7 @@ import ServiceDetails from "../pages/ServiceDetails";
 import ErrorPage from "../pages/ErrorPage";
 import BlogDetails from "../pages/BlogDetails";
 import PrivateRoute from "./PrivateRoute";
+import Cart from "../pages/Cart";
 
 const router =createBrowserRouter( [
     {
@@ -28,6 +29,10 @@ const router =createBrowserRouter( [
             {
                 path: "/login",
                 element: <Login />
+            },
+            {
+                path: "/cart",
+                element: <PrivateRoute> <Cart /> </PrivateRoute>
             },
             {
                 path: "/register",

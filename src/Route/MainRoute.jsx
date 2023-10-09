@@ -10,9 +10,9 @@ const MainRoute = () => {
 
   const {loading}= useContext(AuthContext)
 
-  // if(loading){
-  //   return <Loading />
-  // }
+  if(loading){
+    return <Loading />
+  }
 
   return (
     <div className=''>

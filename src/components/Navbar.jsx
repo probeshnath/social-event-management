@@ -42,7 +42,7 @@ const Navbar = () => {
         <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Home</NavLink></li>
         <li><NavLink to="/contact" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Contact</NavLink></li>
         <li><NavLink to="/blogs" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Blogs</NavLink></li>
-        {/* <li><NavLink to="/" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Services</NavLink></li> */}
+        <li><NavLink to="/cart" className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}> Cart</NavLink></li>
     </>
     return (
         <div className="bg-white py-2 shadow-md">

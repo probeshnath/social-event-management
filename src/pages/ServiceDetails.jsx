@@ -3,19 +3,31 @@ import { useLoaderData, useParams } from 'react-router-dom'
 import { FiDollarSign } from 'react-icons/fi'
 import { BiCreditCard } from 'react-icons/bi'
 import {MdOutlineFavoriteBorder,MdFavorite} from 'react-icons/md'
+import {toast} from 'react-toastify'
 
 const ServiceDetails = () => {
   const [service, setService] = useState(null)
   const [imgURL, setImgURL] = useState(null)
   const { id } = useParams();
   const datas = useLoaderData();
+  const [localCartData, setLocalCartData]= useState([])
 
   useEffect(() => {
     const item = datas.find((data) => data.id == id)
     setService(item)
     setImgURL(service?.img[0])
   }, [])
-  console.log(id)
+  // console.log(id)
+
+  const addtocard = () =>{
+    const myLocalData = localStorage.getItem("cart")
+    const data = JSON.parse(myLocalData);
+    
+    setLocalCartData([...localCartData,service])
+    localStorage.setItem("cart", JSON.stringify(localCartData) )
+    toast.success("Add To Cart")
+    console.log("my card data",data)
+  }
   return (
     <div className=''>
       <div  className='relative'>
@@ -24,8 +36,8 @@ const ServiceDetails = () => {
       <div className='bg-slate-100 w-4/5 md:w-2/3 mx-auto -bottom-[400px] md:-bottom-[200px] lg:-bottom-[250px] -right-[50%] -left-[50%]  absolute py-10 px-5 rounded-lg'>
         {/* for all img */}
         <div className='flex gap-2  md:gap-4 justify-center py-2 lg:py-5  mx-auto'>
-          {service?.img.map((imgitem) => (
-            <img onClick={()=> setImgURL(imgitem)} className=' w-20 h-10 lg:w-30 lg:h-20 rounded-lg ' src={imgitem} alt="" />
+          {service?.img.map((imgitem,inx) => (
+            <img key={inx} onClick={()=> setImgURL(imgitem)} className=' w-20 h-10 lg:w-30 lg:h-20 rounded-lg ' src={imgitem} alt="" />
           ))}
         </div>
         {/* for Details */}
@@ -37,7 +49,7 @@ const ServiceDetails = () => {
             <div className='flex flex-col md:flex-row  gap-3 items-center' >
               <button className='flex items-center gap-2 border-2 py-1 rounded-md hover:bg-orange-400 hover:text-black px-4'><MdOutlineFavoriteBorder className='text-xl' /> Favorite</button>
               {/* <MdFavorite className='text-red-600 text-lg' /> */}
-            <button className='flex items-center gap-2 bg-orange-400 py-1 hover:bg-transparent hover:border-2 px-3 rounded-md'><BiCreditCard /> Purchase</button>
+            <button onClick={addtocard} className='flex items-center gap-2 bg-orange-400 py-1 hover:bg-transparent hover:border-2 px-3 rounded-md'><BiCreditCard /> Purchase</button>
             </div>
           </div>
         </div>
