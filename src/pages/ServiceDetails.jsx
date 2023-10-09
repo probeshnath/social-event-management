@@ -19,15 +19,32 @@ const ServiceDetails = () => {
   }, [])
   // console.log(id)
 
-  const addtocard = () =>{
-    const myLocalData = localStorage.getItem("cart")
-    const data = JSON.parse(myLocalData);
+  // const addtocard = () =>{
     
-    setLocalCartData([...localCartData,service])
-    localStorage.setItem("cart", JSON.stringify(localCartData) )
-    toast.success("Add To Cart")
-    console.log("my card data",data)
+    const getCartItem = () =>{
+      const storedCart = localStorage.getItem('cart');
+      if(storedCart){
+          return JSON.parse(storedCart);
+      }
+      return [];
   }
+  
+  
+  const addtocard = id =>{
+      const storedItems = getCartItem();
+      const exists = storedItems.find(cartId => cartId === id);
+      if(!exists){
+        storedItems.push(id);
+          localStorage.setItem('cart', JSON.stringify(storedItems))
+      }
+  }
+  
+
+    
+   
+    // toast.success("Add To Cart")
+    // console.log("my card data",data)
+  // }
   return (
     <div className=''>
       <div  className='relative'>
@@ -49,7 +66,7 @@ const ServiceDetails = () => {
             <div className='flex flex-col md:flex-row  gap-3 items-center' >
               <button className='flex items-center gap-2 border-2 py-1 rounded-md hover:bg-orange-400 hover:text-black px-4'><MdOutlineFavoriteBorder className='text-xl' /> Favorite</button>
               {/* <MdFavorite className='text-red-600 text-lg' /> */}
-            <button onClick={addtocard} className='flex items-center gap-2 bg-orange-400 py-1 hover:bg-transparent hover:border-2 px-3 rounded-md'><BiCreditCard /> Purchase</button>
+            <button onClick={() =>addtocard(service?.id)} className='flex items-center gap-2 bg-orange-400 py-1 hover:bg-transparent hover:border-2 px-3 rounded-md'><BiCreditCard /> Purchase</button>
             </div>
           </div>
         </div>

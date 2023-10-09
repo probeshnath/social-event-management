@@ -32,7 +32,8 @@ const router =createBrowserRouter( [
             },
             {
                 path: "/cart",
-                element: <PrivateRoute> <Cart /> </PrivateRoute>
+                element: <PrivateRoute> <Cart /> </PrivateRoute>,
+                loader: ()=> fetch("/services.json"),
             },
             {
                 path: "/register",
