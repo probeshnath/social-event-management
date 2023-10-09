@@ -15,9 +15,9 @@ const Footer = () => {
         </div>
 
         {/* middle part */}
-        <div className='flex justify-between items-center'>
-          <div>
-            <ul className='flex flex-col gap-3 text-gray-500'>
+        <div className='flex justify-between px-3 items-center'>
+          <div className='ml-5'>
+            <ul className='flex flex-col gap-3  text-gray-500'>
               <li><Link to="/" className="" > Home</Link></li>
               <li><Link to="/contact" className="" > Contact</Link></li>
               <li><Link to="/blogs" className=""> Blogs</Link></li>
@@ -28,7 +28,7 @@ const Footer = () => {
             <p className='w-2/3 py-2 mx-auto'>Social events management is a dynamic and multifaceted field that revolves around planning, organizing, and executing a wide range of social gatherings, celebrations, and occasions. From weddings and birthday parties to corporate galas and charity fundraisers, social events management .</p>
           </div>
           <div>
-            <ul className='flex flex-col gap-3 text-gray-500'>
+            <ul className=' hidden md:flex flex-col gap-3 text-gray-500'>
               <li><Link to="/" className="" >Term & Condition</Link></li>
               <li><Link to="/" className="" >Refund Policy</Link></li>
               <li><Link to="/" className="">Technology</Link></li>
@@ -38,7 +38,7 @@ const Footer = () => {
         {/*  */}
 
         {/* last part */}
-        <div className=" flex items-center justify-between px-2 py-2 text-gray-400 ">
+        <div className=" flex items-center flex-col md:flex-row gap-3 justify-between px-2 pt-2 pb-5 text-gray-400 ">
           <p> All rights reserved &copy; Copyright 2023</p>
           <div className='flex gap-4 text-xl '>
             <FaFacebook className='text-[#0866FF] cursor-pointer hover:bg-black hover:text-white' />

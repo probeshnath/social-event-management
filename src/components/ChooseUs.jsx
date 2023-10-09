@@ -3,7 +3,7 @@ import React from 'react'
 const ChooseUs = () => {
     return (
         <div className='bg-gray-100 py-10'>
-            <div className='max-w-6xl mx-auto flex items-center'>
+            <div className='max-w-6xl mx-auto flex flex-col md:flex-row px-3 lg:px-0 items-center'>
                 <div className='flex-1'>
                     <img src="https://www.eventbrite.com/blog/wp-content/uploads/2022/06/thinking-SP-09-01.png" alt="" />
                 </div>

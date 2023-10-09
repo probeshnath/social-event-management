@@ -7,9 +7,11 @@ import {FiLogOut} from 'react-icons/fi'
 import {BiGift} from 'react-icons/bi'
 import {PiSignInBold} from 'react-icons/pi'
 import {  toast } from 'react-toastify';
+import {HiMiniBars3BottomRight} from 'react-icons/hi2'
 
 const Navbar = () => {
     const [open, setOpen]=useState(false)
+    const [phoneOPtion, setPhoneOption]= useState(false)
     const navigate = useNavigate();
 
     const {user,logout} = useContext(AuthContext)
@@ -26,6 +28,10 @@ const Navbar = () => {
         .catch((error)=>{
             return toast.error(error.message);
         })
+    }
+    // for mobile
+    const shownavOnPhone = () =>{
+        setPhoneOption(!phoneOPtion)
     }
 
     const showOPtion = () =>{
@@ -63,8 +69,11 @@ const Navbar = () => {
                                 <img className="ml-2 w-9 rounded-full cursor-pointer" onClick={showOPtion} src={user?.photoURL || "/pngegg.png"} alt="user" /> 
                             </div>
                         ) : (
+                            <div className="flex justify-center px-3 items-center gap-2">
 
                             <Link to="/login"> <button className="border-2 py-1 px-5 border-green-800 rounded-xl bg-green-100 text-green-700 hover:bg-black flex items-center gap-2 hover:text-white transition"> <PiSignInBold  /> Login </button> </Link>
+                            <HiMiniBars3BottomRight onClick={shownavOnPhone} className="text-2xl cursor-pointer md:hidden" />
+                            </div>
                         )
                     }
                     {
@@ -73,6 +82,7 @@ const Navbar = () => {
                             <div>
                                 <img className="w-[50px] h-[50px] rounded-full mx-auto " src={user?.photoURL} alt={user?.displayName} />
                                 <h2 className="mt-2 text-lg text-white capitalize">{user?.displayName}</h2>
+                                <p className="text-sm pb-2">{user?.email}</p>
                                 <button className="bg-orange-400 text-white mt-2 rounded-md py-1 px-4"> My Profile</button>
                             </div>
                             <hr />
@@ -85,9 +95,9 @@ const Navbar = () => {
                     </div>
                     }
 
-                    <ul className="flex absolute bg-slate-400 py-4 px-3 right-3 md:hidden flex-col gap-6 ">
-                        {links}
-                    </ul>
+                   { phoneOPtion && <ul className="flex absolute bg-slate-400 py-4 px-3 right-3 md:hidden flex-col gap-6 ">
+                        { links}
+                    </ul>}
                 </div>
             </div>
         </div>
